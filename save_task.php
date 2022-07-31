@@ -18,6 +18,11 @@ if (isset($_POST['save_task'])){
         die("Query Failed");
     }
 
+
+
+    $_SESSION['message'] = 'Usuario Guardado Correctamente';
+    $_SESSION['message_type'] = 'success';
+
     header("Location: index.php");
 
 
