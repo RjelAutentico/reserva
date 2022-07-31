@@ -28,11 +28,6 @@
                     placeholder="Rut (Sin puntos y con guion)" autofocus>
                 </div>
                 
-                <div class="form-group">
-                    <textarea name="cod_rol" rows="2" class="form-control"
-                    placeholder="Codigo de Rol  (1: Administrador 2: Conserje 3: Residente)"></textarea>
-
-                </div>
 
                 <div class="form-group">
                     <textarea name="nombre_per" rows="2" class="form-control"
@@ -73,7 +68,6 @@
                 <thead>
                     <tr>
                         <th>Rut Usuario</th>
-                        <th>Codigo Rol</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Telefono</th>
@@ -89,7 +83,6 @@
 
                         <tr>
                             <td><?php echo $row['rut_usuario'] ?></td>
-                            <td><?php echo $row['cod_rol'] ?></td>
                             <td><?php echo $row['nombre_per'] ?></td>
                             <td><?php echo $row['apellido_per'] ?></td>
                             <td><?php echo $row['telefono_per'] ?></td>
