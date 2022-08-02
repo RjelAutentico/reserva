@@ -16,10 +16,12 @@ if (isset($_POST['save_task'])){
     $query = "INSERT INTO usuario(rut_usuario, cod_rol, nombre_per, apellido_per, telefono_per, num_domicilio) 
     VALUES ('$rut_usuario', '$cod_rol', '$nombre_per', '$apellido_per', '$telefono_per', '$num_domicilio')";
     
-    /*$result = mysqli_query($conn, $query);*/
+/*    $result = mysqli_query($conn, $query); */
 
     if (!$rut_usuario || !$nombre_per || !$apellido_per || !$telefono_per || !$num_domicilio) {
-        die("Query Failed");
+        die("No se llenaron todos los campos");
+
+
     }
 
 

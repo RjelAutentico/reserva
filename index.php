@@ -2,6 +2,13 @@
 
 <?php include("includes/header.php")?>
 
+<style>  
+    body{
+        backgraund-image: url('includes/fondo.jpg');
+    }  
+</style>
+
+
 
 <div class="container p-4">
     
@@ -28,7 +35,6 @@
                     placeholder="Rut (Sin puntos y con guion)" autofocus>
                 </div>
                 
-
                 <div class="form-group">
                     <textarea name="nombre_per" rows="2" class="form-control"
                     placeholder="Nombre"></textarea>
