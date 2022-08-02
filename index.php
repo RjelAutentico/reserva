@@ -70,7 +70,7 @@
 
 
         <div class="col-md-8">
-            <table class="table table-bordered">
+            <table class= "table table-dark table-striped">
                 <thead>
                     <tr>
                         <th>Rut Usuario</th>
