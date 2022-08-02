@@ -2,11 +2,6 @@
 
 <?php include("includes/header.php")?>
 
-<style>  
-    body{
-        backgraund-image: url('includes/fondo.jpg');
-    }  
-</style>
 
 
 
@@ -27,7 +22,7 @@
         
         <?php session_unset(); } ?>
 
-        <div class="card card-body">
+        <div class="card card-body" style="background: #332d2d;">
             <form action="save_task.php" method="POST">
 
                 <div class="form-group">
