@@ -3,6 +3,15 @@
 <?php include("includes/header.php")?>
 
 
+<style>
+   body {
+        background-image: url('fondo3.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style> 
+
 
 
 <div class="container p-4">
