@@ -22,13 +22,14 @@
 
 
 <body background="fondo3.jpg">
-    <h1>EdifRed</h1>
+ 
 
 
 
 
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
+        <h1>EdifRed</h1>
         <a href="index.php" class="navbar-brand">USUARIOS</a>
     </div>
 
