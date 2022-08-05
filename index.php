@@ -95,7 +95,7 @@
                             <td><?php echo $row['rut_usuario'] ?></td>
                             <td><?php echo $row['nombre_per'] ?></td>
                             <td><?php echo $row['apellido_per'] ?></td>
-                            <td><?php echo $row['telefono_per'] ?></td>
+                            <td><?php echo "+56 ". $row['telefono_per'] ?></td>
                             <td><?php echo $row['num_domicilio'] ?></td>
 
                         </tr>
