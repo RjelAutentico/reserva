@@ -5,6 +5,9 @@
         $id = $_GET['rut_usuario'];
         $query = "DELETE FROM usuarios WHERE rut_usuario = $id";
         $result = mysqli_query($conn, $query);
-
+        if (!$result)
+        {
+            die("Fallo en eliminar")
+        }
     }
 ?>
