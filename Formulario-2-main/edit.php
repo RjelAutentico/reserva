@@ -32,10 +32,24 @@
                         <input type="text" name="Rut Usuario" value="<?php echo $rut_usuario; ?>"
                         class="form-control" placeholder="Actualizar Rut">
                     </div>
+                   
                     <div class="form-group">
                         <textarea name="Nombre" rows="2" class="form-control" placeholder="Actualizar Nombre"><?php echo $nombre_per; ?></textarea>
                     </div>
-                    <button class="btn-success" name="update">
+                                       
+                    <div class="form-group">
+                        <textarea name="Apellido" rows="2" class="form-control" placeholder="Actualizar Apellido"><?php echo $apellido_per; ?></textarea>
+                    </div>
+                                       
+                    <div class="form-group">
+                        <textarea name="Telefono" rows="2" class="form-control" placeholder="Actualizar Telefono"><?php echo $telefono_per; ?></textarea>
+                    </div>
+                                       
+                    <div class="form-group">
+                        <textarea name="Domicilio" rows="2" class="form-control" placeholder="Actualizar Domicilio"><?php echo $num_domicilio; ?></textarea>
+                    </div>
+                    
+                    <button class="btn btn-success" name="update">
                         Actualizar
                     </button>
                 </form>
