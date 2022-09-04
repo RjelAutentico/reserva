@@ -9,5 +9,9 @@
         {
             die("Fallo en eliminar")
         }
+
+        $_SESSION['message'] = 'Se removio con exito al usuario'
+        $_SESSION['message_type'] = 'danger';
+        header("Location: formulariousuario.php")
     }
 ?>
