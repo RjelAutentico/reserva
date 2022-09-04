@@ -18,6 +18,19 @@
 
 
     }
+
+
+    if(isset($_POST['update'])) {
+        $rut_usuario = $_GET['rut_usuario'];
+        $nombre_per = $_POST['nombre_per'];
+        $apellido_per = $_POST['apellido_per'];
+        $telefono_per = $_POST['telefono_per'];
+        $num_domicilio = $_POST['num_domicilio'];
+
+        $query = "UPDATE usuarios set rut_usuario = '$rut_usuario', nombre_per = '$nombre_per', apellido_per = '$apellido_per', telefono_per = '$telefono_per',  num_domicilio = '$num_domicilio' WHERE rut_usuario = $rut_usuario";
+        mysqli_query($conn, $query);
+        header("Location: formulariousuario.php")
+    }
 ?>
 
 
@@ -27,7 +40,7 @@
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card card-body">
-                <form action="">
+                <form action="edit.php?id=<?php echo $_GET['rut_usuario']; ?>" method="POST" >
                     <div class="form-group">
                         <input type="text" name="Rut Usuario" value="<?php echo $rut_usuario; ?>"
                         class="form-control" placeholder="Actualizar Rut">
