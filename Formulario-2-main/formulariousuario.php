@@ -52,7 +52,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <input name="telefono_per" rows="2" class="form-control"
+                    <input name="telefono_per" pattern="^9\d\d\d\d\d\d\d\d$" rows="2" class="form-control"
                     placeholder="Teléfono (Sin +56)"></input>
 
                 </div>

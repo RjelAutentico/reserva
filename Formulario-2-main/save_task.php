@@ -10,9 +10,11 @@ if (isset($_POST['save_task'])){
     $telefono_per = $_POST['telefono_per'];
     $num_domicilio = $_POST['num_domicilio'];
 
-    if (!$rut_usuario || !$nombre_per || !$apellido_per || !$telefono_per || !$num_domicilio) {
-        die("No se llenaron todos los campos");
-    }
+    if (!$rut_usuario || !$nombre_per || !$apellido_per || !$telefono_per || !$num_domicilio) { ?>
+        <script type="text/javascript">
+            alert("Complete todos los campos");
+            window.location.href="formulariousuario.php?rut=<?php echo $rut_usuario ?>";
+        </script>'; <?php    }
     else{
         $cod_rol = 3;
         $query = "INSERT INTO usuarios(rut_usuario, cod_rol, nombre_per, apellido_per, telefono_per, num_domicilio) 
@@ -24,12 +26,16 @@ if (isset($_POST['save_task'])){
 
 
 
-    $_SESSION['message'] = 'Usuario Guardado Correctamente';
-    $_SESSION['message_type'] = 'success';
-
-    header("Location: formulariousuario.php");
-
+    if($result==1){ ?>
+        <script type="text/javascript">
+            alert("Usuario Registrado");
+            window.location.href="formulariousuario.php?rut=<?php echo $rut_usuario ?>";
+        </script>'; <?php
+    
 
 }
 /**//**/
+
+}
 ?>
+
