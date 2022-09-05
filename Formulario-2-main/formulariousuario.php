@@ -40,26 +40,26 @@
                 </div>
                 
                 <div class="form-group">
-                    <textarea name="nombre_per" rows="2" class="form-control"
-                    placeholder="Nombre"></textarea>
+                    <input name="nombre_per" rows="2" class="form-control"
+                    placeholder="Nombre"></input>
 
                 </div>
 
                 <div class="form-group">
-                    <textarea name="apellido_per" rows="2" class="form-control"
-                    placeholder="Apellido"></textarea>
-
-                </div>
-                
-                <div class="form-group">
-                    <textarea name="telefono_per" rows="2" class="form-control"
-                    placeholder="Telefono (Sin +56)"></textarea>
+                    <input name="apellido_per" rows="2" class="form-control"
+                    placeholder="Apellido"></input>
 
                 </div>
                 
                 <div class="form-group">
-                    <textarea name="num_domicilio" rows="2" class="form-control"
-                    placeholder="Numero de Domicilio"></textarea>
+                    <input name="telefono_per" rows="2" class="form-control"
+                    placeholder="Telefono (Sin +56)"></input>
+
+                </div>
+                
+                <div class="form-group">
+                    <input name="num_domicilio" rows="2" class="form-control"
+                    placeholder="Numero de Domicilio"></input>
 
                 </div>
                 

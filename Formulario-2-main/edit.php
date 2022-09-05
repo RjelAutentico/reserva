@@ -5,7 +5,7 @@
         $id = $_GET['rut_usuario'];
         $query = "SELECT * FROM usuarios WHERE rut_usuario = $id";
 
-        $result = mysqli_query($conn, $query);
+        $result = mysqli_query($con, $query);
         if(mysqli_num_rows($result) == 1){
             $row = mysqli_fetch_array($result);
             $rut_usuario = $row['rut_usuario'];

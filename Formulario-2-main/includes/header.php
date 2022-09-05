@@ -34,12 +34,10 @@
 
 
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark" style="padding: 0.2%; text-align:right;">
     <div class="container">
         <h1>EdifRed</h1>
         <a href="homepage.php" class="navbar-brand">P. INICIO</a>
-        <a href="homepagereservas.php" class="navbar-brand">RESERVAS</a>
         <a href="formulariousuario.php" class="navbar-brand">USUARIOS</a>
     </div>
-
 </nav>
