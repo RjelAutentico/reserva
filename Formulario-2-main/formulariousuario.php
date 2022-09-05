@@ -58,7 +58,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <input name="num_domicilio" rows="2" class="form-control"
+                    <input name="num_domicilio" pattern="^3\d\d$" rows="2" class="form-control"
                     placeholder="Número de Domicilio"></input>
 
                 </div>
