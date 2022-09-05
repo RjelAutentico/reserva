@@ -35,8 +35,8 @@
             <form action="save_task.php" method="POST">
 
                 <div class="form-group">
-                    <input type="text" name="rut_usuario" class="form-control" 
-                    placeholder="Rut (Sin puntos y con guion)" autofocus>
+                    <input type="text" pattern="^(\d{1,8}-[\dkK])$" name="rut_usuario" class="form-control" 
+                    placeholder="Rut (Sin puntos y con guión)" autofocus>
                 </div>
                 
                 <div class="form-group">
@@ -53,18 +53,18 @@
                 
                 <div class="form-group">
                     <input name="telefono_per" rows="2" class="form-control"
-                    placeholder="Telefono (Sin +56)"></input>
+                    placeholder="Teléfono (Sin +56)"></input>
 
                 </div>
                 
                 <div class="form-group">
                     <input name="num_domicilio" rows="2" class="form-control"
-                    placeholder="Numero de Domicilio"></input>
+                    placeholder="Número de Domicilio"></input>
 
                 </div>
                 
                 <input type="submit" class="btn btn-success btn-block" 
-                name="save_task" value="Guardar Usuario">
+                name="save_task" value="Guardar usuario">
 
 
             </form>
@@ -80,7 +80,7 @@
                         <th>Rut Usuario</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
-                        <th>Telefono</th>
+                        <th>Teléfono</th>
                         <th>Domicilio</th>
                         <th>Acciones</th>
                     </tr>

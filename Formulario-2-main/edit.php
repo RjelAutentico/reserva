@@ -1,9 +1,9 @@
 <?php 
     include("conexion.php");
 
-    if(isset($_GET['rut_usuario'])) {
-        $id = $_GET['rut_usuario'];
-        $query = "SELECT * FROM usuarios WHERE rut_usuario = $id";
+    if(isset($_GET['id'])) {
+        $id = $_GET['id'];
+        $query = "SELECT * FROM usuarios WHERE rut_usuario = '$id'";
 
         $result = mysqli_query($con, $query);
         if(mysqli_num_rows($result) == 1){
@@ -43,26 +43,26 @@
     <div class="row">
         <div class="col-md-4 mx-auto">
             <div class="card card-body">
-                <form action="edit.php?id=<?php $_GET['rut_usuario']; ?>" method="POST" >
+                <form action="edit.php" method="POST" >
                     <div class="form-group">
                         <input type="text" name="Rut Usuario" value="<?php echo $rut_usuario ?>"
                         class="form-control" placeholder="Actualizar Rut">
                     </div>
                    
                     <div class="form-group">
-                        <textarea name="Nombre" rows="2" class="form-control" placeholder="Actualizar Nombre"><?php echo $nombre_per ?></textarea>
+                        <input name="Nombre" rows="2" class="form-control" placeholder="Actualizar Nombre" style="color: #000000"><?php echo $nombre_per ?></input>
                     </div>
                                        
                     <div class="form-group">
-                        <textarea name="Apellido" rows="2" class="form-control" placeholder="Actualizar Apellido"><?php echo $apellido_per ?></textarea>
+                        <input name="Apellido" rows="2" class="form-control" placeholder="Actualizar Apellido"><?php echo $apellido_per ?></input>
                     </div>
                                        
                     <div class="form-group">
-                        <textarea name="Telefono" rows="2" class="form-control" placeholder="Actualizar Telefono"><?php echo $telefono_per ?></textarea>
+                        <input name="Telefono" rows="2" class="form-control" placeholder="Actualizar Telefono"><?php echo $telefono_per ?></input>
                     </div>
                                        
                     <div class="form-group">
-                        <textarea name="Domicilio" rows="2" class="form-control" placeholder="Actualizar Domicilio"><?php echo $num_domicilio ?></textarea>
+                        <input name="Domicilio" rows="2" class="form-control" placeholder="Actualizar Domicilio"><?php echo $num_domicilio ?></input>
                     </div>
                     
                     <button class="btn btn-success" name="update">
